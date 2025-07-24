@@ -22,18 +22,25 @@
   border-left: 4px solid var(--highlight);
 }
 
-.leader-grid {
+.leader, .leader-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 
 .leader img {
   width: 100%;
+  max-width: 200px;
   height: auto;
   border-radius: 50%;
+  margin-bottom: 1rem;
 }
 header {
     background-color: #263340;
@@ -430,7 +437,65 @@ hr {
       box-shadow: 0 0 8px rgba(0,0,0,0.05);
     }
 
+.media-text-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+input, select {
+    width:100%;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+input:focus, select:focus {
+    outline: 1.5px solid #333;
+}
 
+label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+select {
+    appearance: none;
+}
+
+div.select {
+    position:relative;
+}
+div.select::after{
+    content: '\2304';
+    position: absolute;
+    right: 0px;
+    padding-right: 0.36rem;
+    top:50%;
+    z-index:99;
+    transform: translateY(-75%);
+    font-size: 1.5rem;
+    color: #aaa;
+}
+
+button {
+    padding: 0.5rem 0.75rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px #000;
+}
+
+button.btn-confirmar {
+    background-color: #021775;
+    color:#fff;
+}
+
+button.btn-cancelar {
+    background-color: #660000;
+    color:#fff;
+}
 
 
 @media (max-width: 768px) {

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - NativaTours HN </title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        .error {
+            color: darkred;
+        }
+
+        input.error {
+            color: initial;
+            outline: red;
+            border: solid 1px red;
+        }
+    </style>
+    <script src="js/formValidation.js"></script>
+</head>
+<body>
+    <header>
+        <section class="brand-section">
+            <img class="brand" src="img/logo.png" alt="Logo Organización"/>
+            <h1>Viaja, siente y conecta con lo nuestro</h1>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="programas.html">Programas</a></li>
+                <li><a href="ayudar.html">Cómo ayudar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-panel">
+            <div class="hero-carousel">
+                <div class="slides">
+                <img src="img/copan.jpg" class="slide active" alt="Copan Ruinas">
+                <img src="img/tela.jpg" class="slide" alt="Muelle Tela">
+                <img src="img/roatan.jpg" class="slide" alt="Playa Roatan">
+           
+            <div class="hero-action center">
+                <h2>Conoce los tesoros naturales de nuestro país a través del turismo responsable.</h2>
+                <button>Explora nuestras opciones</button>
+            </div>
+            </section>
+            <form action="comoayudar.html" method="GET" id="formDemo">
+            <div>
+                <label for="txtNombre">Nombre Completo:</label>
+                <input type="text" name="nombre" id="txtNombre" placeholder="John Doe" required />
+            </div>
+            <div>
+                <label for="txtPassword">Contraseña:</label>
+                <input type="password" name="password" id="txtPassword" placeholder="1# 1M 1m ..." maxlength="32"
+                    minlength="8" required />
+            </div>
+            <div>
+                <label for="txtEmail">Correo Electrónico:</label>
+                <input type="email" name="email" id="txtEmail" placeholder="johndoe@amail.com" />
+            </div>
+            <label for="txtPhone">Teléfono Celular:</label>
+            <input type="text" name="phone" id="txtPhone" placeholder="+(504) 9999-9999" />
+            <br />
+            <label for="txtEdad">Edad:</label>
+            <input type="number" name="edad" id="txtEdad" placeholder="0-100" min="0" max="100" step="1" />
+            <br />
+            <label for="cmbPais">País de Origen:</label>
+            <select name="pais" id="cmbPais">
+                <option value="HND">Honduras</option>
+                <option value="GTM">Guatemala</option>
+                <option value="ESL">El Salvador</option>
+                <option value="NIC">Nicaragua</option>
+                <option value="PMA">Panamá</option>
+                <option value="MEX">México</option>
+                <option value="USA">Estado Unidos</option>
+                <option value="ARG">Argentina</option>
+            </select>
+            <br />
+            <button type="submit" name="btnSubmit">Enviar</button>
+        </form>
+    </main>
+                <footer class="footer">
+                  <div class="footer-container">
+                    <div class="footer-column">
+                    <h3>Nativatours HN</h3>
+                    <p>Organizamos experiencias de turismo responsable en Honduras, destinando los fondos a la protección de la flora y fauna en peligro.</p>
+                    </div>
+                    <div class="footer-column">
+                    <h4>Contáctanos</h4>
+                    <p>Tegucigalpa, Honduras</p>
+                    <p>contacto@nativatours.org</p>
+                    <p>+504 9840-7171</p>
+                    </div>
+
+                    <div class="footer-column">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/nativatourshn" target="_blank">Facebook</a><br>
+                        <a href="https://instagram.com/nativatourshn" target="_blank">Instagram</a><br>
+                        <a href="https://twitter.com/nativatourshn" target="_blank">Twitter</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Nativatours HN. Todos los derechos reservados. Proyecto sin fines de lucro por la conservación ambiental en Honduras.</p>
+                </div>
+        </footer>
+   </body>
+</html>
