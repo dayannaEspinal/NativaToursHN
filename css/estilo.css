@@ -109,13 +109,16 @@ main {
 
 .mapa {
   margin-top: 25px;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 .mapa h2 {
   color: white;
-  background-color: #085535e1;
+  background-color: rgba(145, 150, 155, 0.651);
   margin-top: 0px;
-  text-align: center;  font-style: s
+  margin-bottom: 0px;
+  text-align: center; 
+  font-style: normal;
+  font-size: medium;
 }
 
 
@@ -351,7 +354,8 @@ input, select {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  padding: 4rem;
+  padding: 2rem;
+  margin-bottom: 0%;
   background-color: #ffffffbb;
 }
 
@@ -364,6 +368,7 @@ input, select {
   border-radius: 8px;
   box-shadow: 3px 3px 5px #2e2d2d62;
   font-family: 'Segoe UI', sans-serif;
+  
 }
 
 /* Imagen circular */
@@ -376,7 +381,17 @@ input, select {
   margin-top: -80px;
   background-color: white;
 }
-
+.news-card button{
+    background-color: rgba(29, 79, 104, 0.493);
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.news-card button:hover {
+    background-color: #197b6cc8;
+}
 /* Títulos y textos */
 .news-card h2 {
   font-size: 1.5rem;
@@ -423,7 +438,8 @@ hr {
 
     h2 {
       color: black;
-      margin-top: 5rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
       text-align: center;
     }
 
@@ -500,6 +516,47 @@ button.btn-cancelar {
     background-color: #660000;
     color:#fff;
 }
+
+/* historias de impacto */
+
+
+.historiasdeimpacto1 {
+  background-color: rgba(212, 226, 238, 0.199);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: 0%;
+}
+
+.historiasdeimpacto2 {
+  background-color: rgba(212, 226, 238, 0.199);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 20;
+  
+}
+
+.historias img {
+  width: 50rem;
+  height: auto;
+  display: block;
+}
+
+
+.TextoHistoria {
+  flex: 1;
+  display: block;
+  justify-content: center;  
+  height: au;   
+}
+
+
+
+
+
 
 
 @media (max-width: 768px) {
