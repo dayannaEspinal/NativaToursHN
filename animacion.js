@@ -1,15 +1,22 @@
+document.addEventListener(
+    "DOMContentLoaded",
+    ()=>{
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slides');
 
-    // Animación de aparición de secciones al hacer scroll
-    const secciones = document.querySelectorAll('.seccion');
-
-    const mostrarSeccion = () => {
-      secciones.forEach(sec => {
-        const top = sec.getBoundingClientRect().top;
-        if (top < window.innerHeight - 100) {
-          sec.classList.add('visible');
+        function showNextSlide() {
+          slides[currentIndex].classList.remove('active');
+          currentIndex = (currentIndex + 1) % slides.length;
+          slides[currentIndex].classList.add('active');
         }
-      });
-    };
 
-    window.addEventListener('scroll', mostrarSeccion);
-    window.addEventListener('load', mostrarSeccion);
+        // Cambiar slide cada 4 segundos
+        setInterval(showNextSlide, 4000);
+          
+
+
+
+            caruselInit();
+        }
+        //binding (this)
+);
