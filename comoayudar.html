@@ -21,40 +21,34 @@
 <body>
     <header>
         <section class="brand-section">
-            <img class="brand" src="img/logo.png" alt="Logo Organización"/>
-            <h1>Viaja, siente y conecta con lo nuestro</h1>
+            <img class="brand" src="img/logofinal.jpg" alt="Logo Organización"/>
+            <h1>NativaTours HN</h1>
         </section>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="programas.html">Programas</a></li>
-                <li><a href="ayudar.html">Cómo ayudar</a></li>
+                <li><a href="comoayudar.html">Cómo ayudar</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+     <main>
         <section class="hero-panel">
             <div class="hero-carousel">
                 <div class="slides">
-                <img src="img/copan.jpg" class="slide active" alt="Copan Ruinas">
-                <img src="img/tela.jpg" class="slide" alt="Muelle Tela">
-                <img src="img/roatan.jpg" class="slide" alt="Playa Roatan">
+                <img src="img/fondo1.jpg" class="slide active" alt="CayosCochinos">
+                <img src="img/fondo2.jpg" class="slide" alt="PlayaCayos">
+                <img src="img/roatan.jpg" class="slide" alt="PlayaRoatan">
            
             <div class="hero-action center">
                 <h2>Conoce los tesoros naturales de nuestro país a través del turismo responsable.</h2>
-                <button>Explora nuestras opciones</button>
             </div>
-            </section>
+        </section>
             <form action="comoayudar.html" method="GET" id="formDemo">
             <div>
                 <label for="txtNombre">Nombre Completo:</label>
                 <input type="text" name="nombre" id="txtNombre" placeholder="John Doe" required />
-            </div>
-            <div>
-                <label for="txtPassword">Contraseña:</label>
-                <input type="password" name="password" id="txtPassword" placeholder="1# 1M 1m ..." maxlength="32"
-                    minlength="8" required />
             </div>
             <div>
                 <label for="txtEmail">Correo Electrónico:</label>
@@ -62,10 +56,10 @@
             </div>
             <label for="txtPhone">Teléfono Celular:</label>
             <input type="text" name="phone" id="txtPhone" placeholder="+(504) 9999-9999" />
-            <br />
+            <br/>
             <label for="txtEdad">Edad:</label>
             <input type="number" name="edad" id="txtEdad" placeholder="0-100" min="0" max="100" step="1" />
-            <br />
+            <br/>
             <label for="cmbPais">País de Origen:</label>
             <select name="pais" id="cmbPais">
                 <option value="HND">Honduras</option>
@@ -78,6 +72,10 @@
                 <option value="ARG">Argentina</option>
             </select>
             <br />
+            <label for="txtComentario">Comentario:</label><br />
+            <textarea name="textComment" id="txtCm" placeholder="Comentario" rows="10" maxlength="1024"
+            cols="80"></textarea>
+        <br />
             <button type="submit" name="btnSubmit">Enviar</button>
         </form>
     </main>

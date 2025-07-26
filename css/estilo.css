@@ -320,7 +320,7 @@ footer {
 
 
 form {
-    width: 100%;
+    width: 40%;
 }
 
 input, select {
@@ -554,6 +554,64 @@ button.btn-cancelar {
 }
 
 
+/* mision vision nosotros */
+
+.mision-vision {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+  background-image: url('img/coral.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.mision-vision::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255, 255, 255, 0.85); /* capa blanca suave */
+  z-index: 0;
+}
+
+.bloque {
+  position: relative;
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  background-color: #f0d3d3;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.bloque h2 {
+  color: #00794d;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.bloque p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Activación de animación */
+.bloque.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 

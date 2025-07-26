@@ -1,22 +1,20 @@
 document.addEventListener(
     "DOMContentLoaded",
     ()=>{
-        let currentIndex = 0;
-        const slides = document.querySelectorAll('.slides');
+     
+  const elementos = document.querySelectorAll('.animacion');
 
-        function showNextSlide() {
-          slides[currentIndex].classList.remove('active');
-          currentIndex = (currentIndex + 1) % slides.length;
-          slides[currentIndex].classList.add('active');
-        }
+  const mostrarAlScroll = () => {
+    const scrollY = window.scrollY + window.innerHeight;
+    elementos.forEach(el => {
+      if (scrollY > el.offsetTop + 50) {
+        el.classList.add('visible');
+      }
+    });
+  };
 
-        // Cambiar slide cada 4 segundos
-        setInterval(showNextSlide, 4000);
-          
+  window.addEventListener('scroll', mostrarAlScroll);
+  window.addEventListener('load', mostrarAlScroll);
 
 
-
-            caruselInit();
-        }
-        //binding (this)
 );
