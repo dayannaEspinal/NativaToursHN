@@ -2,19 +2,20 @@ document.addEventListener(
     "DOMContentLoaded",
     ()=>{
      
-  const elementos = document.querySelectorAll('.animacion');
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
 
-  const mostrarAlScroll = () => {
-    const scrollY = window.scrollY + window.innerHeight;
-    elementos.forEach(el => {
-      if (scrollY > el.offsetTop + 50) {
-        el.classList.add('visible');
-      }
-    });
-  };
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+    }
 
-  window.addEventListener('scroll', mostrarAlScroll);
-  window.addEventListener('load', mostrarAlScroll);
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
 
+    setInterval(nextSlide, 3000); // cambia cada 3 segundos
+});
 
-);
