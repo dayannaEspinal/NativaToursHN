@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galería de Fotos - NativaTours HN</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      background: rgba(44, 62, 80, 0.7);
+      color: white;
+      width: 100%;
+      padding: 0.6rem;
+      font-weight: bold;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <section class="brand-section">
+      <img class="brand" src="img/logofinal.jpg" alt="Logo Organización" />
+      <h1>NativaTours HN</h1>
+    </section>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="programas.html">Programas</a></li>
+        <li><a href="comoayudar.html">Cómo ayudar</a></li>
+        <li><a href="Galeria de fotos.html" class="active">Galería</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="donaciones.html">Donaciones</a></li>
+        <li><a href="faq.html">Preguntas Frecuentes</a></li>
+        <li><a href="contactenos.html">Contáctenos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Galería de Fotos - Eventos y Trabajo</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="img/evento1.jpg" alt="Jornada de Reforestación"/>
+        <div class="caption">Jornada de Reforestación - La Tigra</div>
+      </div>
+      <div class="gallery-item">
+        <img src="img/evento2.jpg" alt="Limpieza de Playa"/>
+        <div class="caption">Limpieza de Playa - Tela</div>
+      </div>
+      <div class="gallery-item">
+        <img src="img/evento3.jpg" alt="Liberación de Tortugas"/>
+        <div class="caption">Liberación de Tortugas - Playa El Venado</div>
+      </div>
+      <div class="gallery-item">
+        <img src="img/trabajo1.jpg" alt="Voluntarios plantando árboles"/>
+        <div class="caption">Voluntarios Plantando Árboles</div>
+      </div>
+      <div class="gallery-item">
+        <img src="img/trabajo2.jpg" alt="Educación Ambiental"/>
+        <div class="caption">Educación Ambiental en Comunidades</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>NativaTours HN</h3>
+        <p>Organizamos experiencias de turismo responsable en Honduras, destinando los fondos a la protección de la flora y fauna en peligro.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Contáctanos</h4>
+        <p>Tegucigalpa, Honduras</p>
+        <p>contacto@nativatours.org</p>
+        <p>‪+504 9840-7171‬</p>
+      </div>
+      <div class="footer-column">
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="https://facebook.com/nativatourshn" target="_blank">Facebook</a><br />
+          <a href="https://instagram.com/nativatourshn" target="_blank">Instagram</a><br />
+          <a href="https://twitter.com/nativatourshn" target="_blank">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 NativaTours HN. Todos los derechos reservados. Proyecto sin fines de lucro por la conservación ambiental en Honduras.</p>
+    </div>
+  </footer>
+</body>
+</html> 

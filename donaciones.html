@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donaciones - NativaToursHN</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  
+  <header>
+    <div class="brand-section">
+      <img src="img/logo.png" alt="Logo NativaToursHN">
+      <h1>NativaToursHN</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="programas.html">Programas</a></li>
+        <li><a href="comoayudar.html">Cómo ayudar</a></li>
+        <li><a href="donaciones.html">Donaciones</a></li>
+        <li><a href="faq.html">Preguntas Frecuentes</a></li>
+        <li><a href="contactenos.html">Contáctenos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <main class="contenido">
+    <section class="seccion visible">
+      <h2>Apóyanos con tu donación 💚</h2>
+      <p style="text-align: center;">Tu aporte ayuda a promover el ecoturismo sostenible, conservar nuestras bellezas naturales y fortalecer comunidades hondureñas.</p>
+
+      <form onsubmit="procesarDonacion(event)">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+
+        <label for="monto">Monto de la donación (Lempiras)</label>
+        <input type="number" id="monto" name="monto" placeholder="Ej. 500" min="1" required>
+
+        <button type="submit" class="btn-confirmar">Donar ahora</button>
+      </form>
+
+      <p id="mensajeDonacion" style="text-align: center; margin-top: 1rem; font-weight: bold;"></p>
+    </section>
+  </main>
+
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <p><strong>Dirección:</strong> Tegucigalpa, Honduras</p>
+        <p><strong>Correo:</strong> contacto@nativatours.org</p>
+        <p><strong>Tel:</strong> +504 9840-7171</p>
+      </div>
+      <div class="footer-column">
+        <p><strong>Síguenos:</strong></p>
+        <div class="social-icons">
+          <a href="#">Facebook</a><br>
+          <a href="#">Instagram</a><br>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Nativatours HN. Todos los derechos reservados. Proyecto sin fines de lucro por la conservación ambiental en Honduras.
+    </div>
+  </footer>
+
+  <script>
+    function procesarDonacion(event) {
+      event.preventDefault();
+      const nombre = document.getElementById("nombre").value;
+      const monto = document.getElementById("monto").value;
+      const mensaje = document.getElementById("mensajeDonacion");
+
+      if (monto > 0) {
+        mensaje.textContent = `¡Gracias ${nombre} por tu generosa donación de L. ${monto}! 💚`;
+      } else {
+        mensaje.textContent = "Por favor, ingresa un monto válido.";
+      }
+
+      document.querySelector("form").reset();
+    }
+  </script>
+</body>
+</html>
+
