@@ -20,4 +20,4 @@ El sitio web incluye las siguientes secciones:
 
 
 
-Desarrollado por [@dayannaEspinal](https://github.com/dayannaEspinal),[@Riccy96](https://github.com/Riccy96),
+Desarrollado por [@dayannaEspinal](https://github.com/dayannaEspinal),[@Riccy96](https://github.com/Riccy96),[@Josue726](https://github.com/Josue726)
