@@ -16,6 +16,6 @@ document.addEventListener(
         showSlide(currentSlide);
     }
 
-    setInterval(nextSlide, 3000); // cambia cada 3 segundos
+    setInterval(nextSlide, 2000); // cambia cada 3 segundos
 });
 
