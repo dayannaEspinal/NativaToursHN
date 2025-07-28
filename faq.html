@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Preguntas Frecuentes - NativaToursHN</title>
   <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/animacion.js"></script>
   <style>
     .faq-item {
       margin-bottom: 1rem;
@@ -18,7 +19,7 @@
     .faq-item h3 {
       margin: 0;
       font-size: 1.1rem;
-      color: #2e5e35;
+      color: black;
     }
 
     .faq-item p {
@@ -34,53 +35,56 @@
 </head>
 <body>
 
-  
-  <header>
-    <div class="brand-section">
-      <img src="img/logo.png" alt="Logo NativaToursHN">
-      <h1>NativaToursHN</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="programas.html">Programas</a></li>
-        <li><a href="comoayudar.html">Cómo ayudar</a></li>
-        <li><a href="Galeria de fotos.html">Galería</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="eventos.html">Eventos</a></li>
-        <li><a href="donaciones.html">Donaciones</a></li>
-        <li><a href="faq.html">Preguntas Frecuentes</a></li>
-        <li><a href="contactenos.html">Contáctenos</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="contenido">
-    <section class="seccion visible">
-      <h2>Preguntas Frecuentes</h2>
-
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <h3>¿Qué es NativaToursHN?</h3>
-        <p>Somos una organización sin fines de lucro que promueve el ecoturismo en Honduras y apoya comunidades locales a través de proyectos sostenibles.</p>
-      </div>
-
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <h3>¿Cómo puedo unirme como voluntario?</h3>
-        <p>En la sección “Contáctenos” puedes enviarnos tu información para integrarte como voluntario/a y contribuir con nuestras actividades en campo.</p>
-      </div>
-
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <h3>¿Dónde se encuentra su sede?</h3>
-        <p>Estamos ubicados en la capital de Honduras, Tegucigalpa.</p>
-      </div>
-
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <h3>¿Puedo donar desde el extranjero?</h3>
-        <p>Sí. Contáctanos por correo para proporcionarte las opciones internacionales seguras y disponibles para realizar tu aporte.</p>
-      </div>
-    </section>
+ <body>
+    <header>
+        <section class="brand-section">
+            <img class="brand" src="img/logofinal.jpg" alt="Logo Organización"/>
+            <h1>NativaTours HN</h1>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="programas.html">Programas</a></li>              
+                <li><a href="comoayudar.html">Cómo ayudar</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="contac.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-panel">
+        <div class="hero-carousel">
+            <div class="slides">
+                <img src="img/fondo1.jpg" class="slide active" alt="Cayos Cochinos">
+                <img src="img/fondo2.jpg" class="slide" alt="Playa Cayos">
+                <img src="img/roatan.jpg" class="slide" alt="Playa Roatán">
+            </div>
+            <div class="hero-action center">
+               <section class="seccion visible">
+              <div class="faq-item" onclick="toggleFaq(this)">
+                <h3>¿Qué es NativaToursHN?</h3>
+                <p>Somos una organización sin fines de lucro que promueve el ecoturismo en Honduras y apoya comunidades locales a través de proyectos sostenibles.</p>
+              </div>
+              <div class="faq-item" onclick="toggleFaq(this)">
+                <h3>¿Cómo puedo unirme como voluntario?</h3>
+                <p>En la sección “Contáctenos” puedes enviarnos tu información para integrarte como voluntario/a y contribuir con nuestras actividades en campo.</p>
+              </div>
+              <div class="faq-item" onclick="toggleFaq(this)">
+                <h3>¿Dónde se encuentra su sede?</h3>
+                <p>Estamos ubicados en la capital de Honduras, Tegucigalpa.</p>
+              </div>
+              <div class="faq-item" onclick="toggleFaq(this)">
+                <h3>¿Puedo donar desde el extranjero?</h3>
+                <p>Sí. Contáctanos por correo para proporcionarte las opciones internacionales seguras y disponibles para realizar tu aporte.</p>
+              </div>
+              </section>
+            </div>
+            </div>
+        </section> 
   </main>
-
   <footer>
     <div class="footer-container">
       <div class="footer-column">
@@ -101,11 +105,5 @@
       &copy; 2025 Nativatours HN. Todos los derechos reservados. Proyecto sin fines de lucro por la conservación ambiental en Honduras.
     </div>
   </footer>
-
-  <script>
-    function toggleFaq(element) {
-      element.classList.toggle('active');
-    }
-  </script>
 </body>
 </html>

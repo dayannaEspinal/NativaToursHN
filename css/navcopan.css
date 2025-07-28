@@ -1,0 +1,139 @@
+*  body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background-color: white;
+      color: black;
+      line-height: 1.6;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+.values, .impact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-left: 4px solid var(--highlight);
+}
+
+.leader, .leader-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+
+.leader img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+header {
+    background-color: #263340;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    
+  
+}
+
+header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+:root {
+    --primary: #2e5e35;
+    --highlight: #88b04b;
+    --bg: #f9f9f9;
+    --text: #333;
+}
+  
+
+.brand-section {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 1rem;
+}
+
+.brand-section img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.gallery {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.gallery-images img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: none;
+}
+
+.gallery-images img.active {
+  display: block;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 1rem;
+}
+
+.controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+

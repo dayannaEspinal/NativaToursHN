@@ -7,49 +7,52 @@
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-
-  
-  <header>
-    <div class="brand-section">
-      <img src="img/logo.png" alt="Logo NativaToursHN">
-      <h1>NativaToursHN</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="programas.html">Programas</a></li>
-        <li><a href="comoayudar.html">Cómo ayudar</a></li>
-        <li><a href="Galeria de fotos.html">Galería</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="eventos.html">Eventos</a></li>
-        <li><a href="donaciones.html">Donaciones</a></li>
-        <li><a href="faq.html">Preguntas Frecuentes</a></li>
-        <li><a href="contactenos.html">Contáctenos</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="contenido">
+<body>
+    <header>
+        <section class="brand-section">
+            <img class="brand" src="img/logofinal.jpg" alt="Logo Organización"/>
+            <title>Contactanos - NativaTours HN </title>
+            <link rel="stylesheet" href="css/estilo.css">
+            <script src="js/animacion.js"></script>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="programas.html">Programas</a></li>              
+                <li><a href="comoayudar.html">Cómo ayudar</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="contac.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-panel">
+        <div class="hero-carousel">
+            <div class="slides">
+                <img src="img/fondo1.jpg" class="slide active" alt="Cayos Cochinos">
+                <img src="img/fondo2.jpg" class="slide" alt="Playa Cayos">
+                <img src="img/roatan.jpg" class="slide" alt="Playa Roatán">
+            </div>
+            <div class="hero-action center">
+                <h2>Conoce los tesoros naturales de nuestro país a través del turismo responsable.</h2>
+            </div>
+        </div>
+    </section>
     <section class="seccion visible">
-      <h2>Contáctanos</h2>
       <p style="text-align: center;">¿Tienes dudas, ideas o deseas unirte a nuestras aventuras ecológicas? ¡Escríbenos!</p>
-
       <form onsubmit="enviarFormulario(event)">
         <label for="nombre">Nombre completo</label>
         <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
-
         <label for="email">Correo electrónico</label>
         <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
-
-        <label for="mensaje">Mensaje</label>
         <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje aquí..." required></textarea>
-
-        <button type="submit" class="btn-confirmar">Enviar mensaje</button>
+      </br><button type="submit" class="btn-confirmar">Enviar mensaje</button>
       </form>
     </section>
   </main>
-
-  
   <footer>
     <div class="footer-container">
       <div class="footer-column">

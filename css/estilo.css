@@ -199,11 +199,11 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-60%, -40%);
     color: white;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.4);
-    padding: 1rem 2rem;
+    padding: 1rem 6rem;
     border-radius: 1rem;
 }
 
@@ -398,10 +398,11 @@ hr {
   line-height: 1.6;
 }
 
-.contenido {
-      padding: 2rem;
+.contenido p {
+      padding: 10rem;
       max-width: 1000px;
       margin: auto;
+      text-align: center;
     }
 
     .seccion {
@@ -576,7 +577,7 @@ button.btn-cancelar {
 }
 
 .bloque h2 {
-  color: #00794d;
+  color: black;
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -594,6 +595,87 @@ button.btn-cancelar {
 }
 
 
+
+    /* nosotros */
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+      align-items: center;
+    }
+
+    .intro img {
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .intro-text {
+      flex: 1;
+      text-align: center;
+      min-width: 300px;
+    }
+    .intro-textD {
+      flex: 1;
+      text-align: center;
+      min-width: 300px;
+    }
+
+    .mision-vision {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+   .bloque-animado {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.bloque-animado.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+ /* donacion */
+ 
+ .donacion-invitacion {
+      background-color: #e6fff0;
+      padding: 2rem;
+      text-align: center;
+      margin: 2rem auto;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+    }
+
+    .donacion-invitacion h2 {
+      color: #226644;
+      margin-bottom: 1rem;
+    }
+
+    .donacion-invitacion p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .donacion-invitacion a.btn-donar {
+      background-color: #228855;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .donacion-invitacion a.btn-donar:hover {
+      background-color: #1c6e44;
+    }
 
 
 

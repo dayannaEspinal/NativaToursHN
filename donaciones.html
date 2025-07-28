@@ -5,52 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Donaciones - NativaToursHN</title>
   <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/animacion.js"></script>
 </head>
 <body>
-
-  
   <header>
     <div class="brand-section">
       <img src="img/logo.png" alt="Logo NativaToursHN">
-      <h1>NativaToursHN</h1>
+      <title>Donaciones- NativaTours HN </title>
     </div>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="programas.html">Programas</a></li>
+        <li><a href="programas.html">Programas</a></li>               
         <li><a href="comoayudar.html">Cómo ayudar</a></li>
-        <li><a href="Galeria de fotos.html">Galería</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="eventos.html">Eventos</a></li>
-        <li><a href="donaciones.html">Donaciones</a></li>
         <li><a href="faq.html">Preguntas Frecuentes</a></li>
-        <li><a href="contactenos.html">Contáctenos</a></li>
+        <li><a href="contac.html">Contáctenos</a></li>
+      </ul>
     </nav>
   </header>  
   <main class="contenido">
-    <section class="seccion visible">
-      <h2>Apóyanos con tu donación 💚</h2>
-      <p style="text-align: center;">Tu aporte ayuda a promover el ecoturismo sostenible, conservar nuestras bellezas naturales y fortalecer comunidades hondureñas.</p>
-
-      <form onsubmit="procesarDonacion(event)">
-        <label for="nombre">Nombre completo</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-
-        <label for="correo">Correo electrónico</label>
-        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
-
-        <label for="monto">Monto de la donación (Lempiras)</label>
-        <input type="number" id="monto" name="monto" placeholder="Ej. 500" min="1" required>
-
-        <button type="submit" class="btn-confirmar">Donar ahora</button>
-      </form>
-
-      <p id="mensajeDonacion" style="text-align: center; margin-top: 1rem; font-weight: bold;"></p>
-    </section>
+        <h2>En NativaTours HN creemos que cada viaje puede ser una oportunidad para proteger lo que amamos.</h2>
+        <p>Al donar, estás ayudando a restaurar arrecifes de coral, proteger especies en peligro y empoderar a comunidades locales comprometidas con la naturaleza.</p>
+        <p>Tu apoyo hace posible nuestra misión.</p>
+        <P>Súmate hoy y deja una huella positiva en el futuro de Honduras.</P>
+    <form action="comoayudar.html" method="GET" id="formDemo">
+      <div>
+        <label for="txtNombre">Nombre Completo:</label>
+          <input type="text" name="nombre" id="txtNombre" placeholder="John Doe" required />
+      </div>
+      <div>
+        <label for="txtEmail">Correo Electrónico:</label>
+           <input type="email" name="email" id="txtEmail" placeholder="johndoe@amail.com" />
+      </div>
+        <label for="txtPhone">Teléfono Celular:</label>
+        <input type="text" name="phone" id="txtPhone" placeholder="+(504) 9999-9999" />
+        <br/>
+        <label for="txtEdad">Edad:</label>
+        <input type="number" name="edad" id="txtEdad" placeholder="0-100" min="0" max="100" step="1" />
+        <br/>
+        <label for="cmbPais">País de Origen:</label>
+        <select name="pais" id="cmbPais">
+          <option value="HND">Honduras</option>
+          <option value="GTM">Guatemala</option>
+          <option value="ESL">El Salvador</option>
+          <option value="NIC">Nicaragua</option>
+          <option value="PMA">Panamá</option>
+          <option value="MEX">México</option>
+          <option value="USA">Estado Unidos</option>
+          <option value="ARG">Argentina</option>
+        </select>
+        <br />
+        <label for="txtComentario">Comentario:</label><br />
+           <textarea name="textComment" id="txtCm" placeholder="Comentario" rows="10" maxlength="1024" cols="80"></textarea>
+        <br />
+            <button type="submit" name="btnSubmit">Enviar</button>
+        </form>
   </main>
-
-  
   <footer>
     <div class="footer-container">
       <div class="footer-column">
@@ -71,22 +84,6 @@
       &copy; 2025 Nativatours HN. Todos los derechos reservados. Proyecto sin fines de lucro por la conservación ambiental en Honduras.
     </div>
   </footer>
-
-  <script>
-    function procesarDonacion(event) {
-      event.preventDefault();
-      const nombre = document.getElementById("nombre").value;
-      const monto = document.getElementById("monto").value;
-      const mensaje = document.getElementById("mensajeDonacion");
-
-      if (monto > 0) {
-        mensaje.textContent = `¡Gracias ${nombre} por tu generosa donación de L. ${monto}! 💚`;
-      } else {
-        mensaje.textContent = "Por favor, ingresa un monto válido.";
-      }
-
-      document.querySelector("form").reset();
-    }
   </script>
 </body>
 </html>

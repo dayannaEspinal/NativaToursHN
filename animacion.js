@@ -1,21 +1,12 @@
-document.addEventListener(
-    "DOMContentLoaded",
-    ()=>{
-     
-    let currentSlide = 0;
+document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.slide');
+    let index = 0;
 
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.classList.toggle('active', i === index);
-        });
+    function showNextSlide() {
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
     }
 
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-    }
-
-    setInterval(nextSlide, 2000); // cambia cada 3 segundos
+    setInterval(showNextSlide, 4000); // cada 4 segundos
 });
-

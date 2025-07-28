@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Eventos - NativaToursHN</title>
-  <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/animacion.js"></script>
   <style>
     .eventos-container {
       max-width: 1000px;
@@ -25,7 +26,7 @@
       border-radius: 8px;
       box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
     }
-
+    
     .event-item h3 {
       margin-top: 0;
       color: #2c3e50;
@@ -51,30 +52,40 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="brand-section">
-      <img src="img/logofinal.jpg" alt="Logo NativaToursHN" class="brand" />
-      <h1>NativaToursHN</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="programas.html">Programas</a></li>
-        <li><a href="comoayudar.html">Cómo ayudar</a></li>
-       <li><a href="Galeria de fotos.html">Galería</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="eventos.html">Eventos</a></li>
-        <li><a href="donaciones.html">Donaciones</a></li>
-        <li><a href="faq.html">Preguntas Frecuentes</a></li>
-        <li><a href="contactenos.html">Contáctenos</a></li>
-      </ul>
-    </nav>
+  <body>
+    <header>
+        <section class="brand-section">
+            <img class="brand" src="img/logofinal.jpg" alt="Logo Organización"/>
+            <h1>NativaTours HN</h1>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="programas.html">Programas</a></li>              
+                <li><a href="comoayudar.html">Cómo ayudar</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="contac.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-panel">
+        <div class="hero-carousel">
+            <div class="slides">
+                <img src="img/fondo1.jpg" class="slide active" alt="Cayos Cochinos">
+                <img src="img/fondo2.jpg" class="slide" alt="Playa Cayos">
+                <img src="img/roatan.jpg" class="slide" alt="Playa Roatán">
+            </div>
+            <div class="hero-action center">
+                <h2>Conoce los tesoros naturales de nuestro país a través del turismo responsable.</h2>
+            </div>
+        </div>
+    </section>
   </header>
-
-
-  <main class="eventos-container">
-    <h2>Eventos Futuros y Pasados</h2>
+  <section class="eventos-container">
     <ul class="event-list">
       <li class="event-item">
         <h3>Jornada de Reforestación</h3>
@@ -92,9 +103,8 @@
         <p class="event-description">Acompáñanos en esta actividad única para liberar tortugas marinas y aprender sobre su conservación.</p>
       </li>
     </ul>
+  </section>
   </main>
-
-  
   <footer>
     <div class="footer-container">
       <div class="footer-column">
