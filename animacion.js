@@ -8,5 +8,4 @@ document.addEventListener('DOMContentLoaded', () => {
         slides[index].classList.add('active');
     }
 
-    setInterval(showNextSlide, 4000); // cada 4 segundos
 });

@@ -5,44 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Galería de Fotos - NativaTours HN</title>
   <link rel="stylesheet" href="css/estilo.css" />
+  <script src="js/animacion.js"></script>
   <style>
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-
-    .gallery-item {
-      position: relative;
-      overflow: hidden;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      cursor: pointer;
-    }
-
-    .gallery-item img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.1);
-    }
-
-    .caption {
-      position: absolute;
-      bottom: 0;
-      background: rgba(44, 62, 80, 0.7);
-      color: white;
-      width: 100%;
-      padding: 0.6rem;
-      font-weight: bold;
-      font-size: 0.9rem;
-      text-align: center;
-    }
   </style>
 </head>
 <body>
@@ -65,41 +29,28 @@
         </nav>
     </header>
     <main>
-        <section class="hero-panel">
-        <div class="hero-carousel">
-            <div class="slides">
-                <img src="img/fondo1.jpg" class="slide active" alt="Cayos Cochinos">
-                <img src="img/fondo2.jpg" class="slide" alt="Playa Cayos">
-                <img src="img/roatan.jpg" class="slide" alt="Playa Roatán">
-            </div>
-            <div class="hero-action center">
-                <h2>Conoce los tesoros naturales de nuestro país a través del turismo responsable.</h2>
-            </div>
-        </div>
-    </section>
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="img/evento1.jpg" alt="Jornada de Reforestación"/>
-        <div class="caption">Jornada de Reforestación - La Tigra</div>
-      </div>
-      <div class="gallery-item">
-        <img src="img/evento2.jpg" alt="Limpieza de Playa"/>
-        <div class="caption">Limpieza de Playa - Tela</div>
-      </div>
-      <div class="gallery-item">
-        <img src="img/evento3.jpg" alt="Liberación de Tortugas"/>
-        <div class="caption">Liberación de Tortugas - Playa El Venado</div>
-      </div>
-      <div class="gallery-item">
-        <img src="img/trabajo1.jpg" alt="Voluntarios plantando árboles"/>
-        <div class="caption">Voluntarios Plantando Árboles</div>
-      </div>
-      <div class="gallery-item">
-        <img src="img/trabajo2.jpg" alt="Educación Ambiental"/>
-        <div class="caption">Educación Ambiental en Comunidades</div>
-      </div>
-    </div>
+    <section class="invitacion-copan">
+    <h1>Descubre la Magia de Copán Ruinas</h1>
+    <p>
+      ¡Viaja con nosotros y sumérgete en la historia viva de Honduras!  
+      Explora las enigmáticas ruinas mayas, admira las guacamayas en libertad y siente la energía ancestral de este tesoro.
+      Cada paso que das ayuda a conservar nuestra cultura y naturaleza.
+    </p>
+    <button class="btn-viajar" onclick="reservarViaje()">¡Reserva tu aventura!</button>
+  </section>
   </main>
+  <div class="galeria">
+        <img src="img/copan2.jpg" alt="Maya">
+        <img src="img/copan.jpg" alt="Ruinas Mayas">
+        <img src="img/cafecacao.jpg" alt="cacao">
+        <img src="img/ticucos.jpg" alt="Gastronomia">
+        <img src="img/folk.jpg" alt="Folklore">
+    </div>
+    <div class="modal" id="modal">
+        <span class="cerrar" id="cerrar">&times;</span>
+        <img class="modal-contenido" id="img-ampliada">
+        <p id="caption"></p>
+    </div>
  <footer class="footer">
     <div class="footer-container">
     <div class="footer-column">
